@@ -37,6 +37,8 @@ await page.locator("//button[@name='SaveEdit']").click()
 
 await page.waitForTimeout(3000)
 //Assertions
-await expect(page.locator("//div[contains(@class,'errorMessage')]")).toContainText("No duplicate rules are activated. Activate duplicate rules to identify potential duplicate records.")
+await expect(page.locator("//div[@class='forceVisualMessageQueue']")).toContainText("Account \"Dilip Rajendran\" was created")
+//await expect(page.locator("//div[contains(@class,'errorMessage')]")).toContainText("No duplicate rules are activated. Activate duplicate rules to identify potential duplicate records.")
 
 })
+
